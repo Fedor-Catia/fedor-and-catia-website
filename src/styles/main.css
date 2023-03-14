@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: 'FieldGothic';
+    font-style: normal;
+    font-weight: normal;
+    font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
+    src: url('public/fonts/FieldGothic-No85BoldXWide.otf') format('opentype');
+  }
+}

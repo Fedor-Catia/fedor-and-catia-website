@@ -1,81 +1,96 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import Card from '../components/Card.astro';
+import Layout from "../layouts/Layout.astro";
+import Button from "../components/Button.astro";
+import Avatar from "../components/Avatar.astro";
+
 ---
 
 <Layout title="Welcome!">
-	<main class="dark:bg-gray-900 dark:text-gray-50">
-		<h1>Did it work?</h1>
-		<p class="instructions">
-			To get started, open the directory <code>src/pages</code> in your project.<br />
-			<strong>Code Challenge:</strong> Tweak the "Welcome to Astro" message above.
-		</p>
-		<ul role="list" class="link-card-grid">
-			<Card
-				href="https://docs.astro.build/"
-				title="Documentation"
-				body="Learn how Astro works and explore the official API docs."
-			/>
-			<Card
-				href="https://astro.build/integrations/"
-				title="Integrations"
-				body="Supercharge your project with new frameworks and libraries."
-			/>
-			<Card
-				href="https://astro.build/themes/"
-				title="Themes"
-				body="Explore a galaxy of community-built starter themes."
-			/>
-			<Card
-				href="https://astro.build/chat/"
-				title="Community"
-				body="Come say hi to our amazing Discord community. ❤️"
-			/>
-		</ul>
+	<main>
+		<section id="hero">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+
+				<p class="font-fieldgothic mb-4">Fedor & Catia</p>
+				<p class="inline-flex justify-between items-center py-1 px-4 mb-7 text-sm text-neutral-700 bg-gray-100 rounded-full dark:bg-neutral-800 dark:text-white">
+					<span class="text-sm font-medium">
+						UX partnership for early-stage startups
+					</span>
+				</p>
+				<h1 class="mb-4 text-4xl font-fieldgothic tracking-tight leading-none text-neutral-900 md:text-5xl lg:text-6xl dark:text-white">
+					Make Your Customers Stick <span class="whitespace-nowrap">To Your Product</span>
+				</h1>
+				<p class="mb-8 text-lg font-normal text-neutral-500 lg:text-xl sm:px-16 xl:px-48 dark:text-neutral-400">
+					Make your product easy-to-use from a first day with our service. 
+					We do a full cycle UI/UX design within two weeks: from a deep user research and prototyping, <span class="whitespace-nowrap">to testing and implementing.</span>
+				</p>
+				<Button link="#">Start a partnership</Button>
+			</div>
+		</section>
+		<!--
+		<div class="fixed bottom-5">Menu</div>
+		<h2 class="text-2xl">Our Process</h2>
+			<div class="mb-4">
+				<caption>Within Three Days</caption>
+				<h3>Insights from UX review</h3>
+				<p>image</p>
+				<p>
+					You will receive a report with insightful data, including: The
+					user's feelings when using your product An evaluated list of UX
+					issues UI prototypes free from UX issues
+				</p>
+			</div>
+			<div class="mb-4">
+				<caption>In A Week</caption>
+				<h3>User-tested high-fidelity prototype</h3>
+				<p>image</p>
+				<p>
+					We conduct combined testing with five real customers.
+					During the process, we go with the customer through your product and then adjust the prototype to solve any issues.
+				</p>
+			</div>
+			<div class="mb-4">
+				<caption>In Two Weeks</caption>
+				<h3>Brand new UI on air</h3>
+				<p>image</p>
+				<p>
+					Once the research is completed, we begin building the UI.
+					You'll receive the results in Figma, HTML/CSS, or directly in React components
+					Our design is based on the Tailwind and Flowbite design systems.
+				</p>
+			</div>
+		<h2 class="text-2xl">Approach</h2>
+			<p>- Research is core to understanding users' needs<br>
+				- Research is a time-consuming, non-scalable, expensive thing<br>
+					Only 36% of product teams conduct research studies after the launch<br>
+					78% of product professionals believe their company doesn't do enough research studies or could do more studies<br>
+				- We solve this problem by achieving 80% value with 20% of efforts<br>
+				- We do not make surveys, competitive analysis or usability testing. It's time-consuming and not effective.</p>
+		<h2 class="text-2xl">Our Clients</h2>
+			<p>Practicum</p>
+			<p>RZLT Group</p>
+			<p>???</p>
+		<h2 class="text-2xl">Articles</h2>
+				<div>
+					<h4>You can build a perfect MVP</h4>
+					<p>How to balance quality of UX and development speed</p>
+					<p>A bad UX could kill the growth of a startup.<br>
+						Or worse: it could hide the early signs of a found PMF. 
+						You should aim to do as better UX as possible even at the first launch.</p>
+				</div>
+		<p class="text-xl text-center">Let us handle your design while you focus on what you're best at</p>
+		<h2>Pricing</h2>
+			<p>two+one</p>
+		<h2>FAQ</h2>
+		<h2>About</h2>
+		<h2>CTA-button</h2>
+		<h2>Contacts</h2>
+		 -->
 	</main>
+
+	<footer>
+		<div>footer</div>
+	</footer>
 </Layout>
 
-<style>
-	main {
-		margin: auto;
-		padding: 1.5rem;
-		max-width: 60ch;
-	}
-	h1 {
-		font-size: 3rem;
-		font-weight: 800;
-		margin: 0;
-	}
-	.text-gradient {
-		background-image: var(--accent-gradient);
-		-webkit-background-clip: text;
-		-webkit-text-fill-color: transparent;
-		background-size: 400%;
-		background-position: 0%;
-	}
-	.instructions {
-		line-height: 1.6;
-		margin: 1rem 0;
-		border: 1px solid rgba(var(--accent), 25%);
-		background-color: white;
-		padding: 1rem;
-		border-radius: 0.4rem;
-	}
-	.instructions code {
-		font-size: 0.875em;
-		font-weight: bold;
-		background: rgba(var(--accent), 12%);
-		color: rgb(var(--accent));
-		border-radius: 4px;
-		padding: 0.3em 0.45em;
-	}
-	.instructions strong {
-		color: rgb(var(--accent));
-	}
-	.link-card-grid {
-		display: grid;
-		grid-template-columns: repeat(auto-fit, minmax(24ch, 1fr));
-		gap: 1rem;
-		padding: 0;
-	}
+<style is:global>
 </style>
