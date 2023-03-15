@@ -2,6 +2,9 @@
 import Layout from "../layouts/Layout.astro";
 import Button from "../components/Button.astro";
 import Avatar from "../components/Avatar.astro";
+import FaqCard from "../components/FaqCard.astro";
+import PricingCard from "../components/PricingCard.astro";
+import CTA from "../layouts/CTA.astro";
 
 ---
 
@@ -12,19 +15,94 @@ import Avatar from "../components/Avatar.astro";
 
 				<p class="font-fieldgothic mb-4">Fedor & Catia</p>
 				<p class="inline-flex justify-between items-center py-1 px-4 mb-7 text-sm text-neutral-700 bg-gray-100 rounded-full dark:bg-neutral-800 dark:text-white">
-					<span class="text-sm font-medium">
-						UX partnership for early-stage startups
+					<span class="text-sm font-medium capitalize">
+						UX partnership for fast-growing startups
 					</span>
 				</p>
-				<h1 class="mb-4 text-4xl font-fieldgothic tracking-tight leading-none text-neutral-900 md:text-5xl lg:text-6xl dark:text-white">
-					Make Your Customers Stick <span class="whitespace-nowrap">To Your Product</span>
+				<h1 class="mb-4 text-4xl font-fieldgothic capitalize tracking-tight leading-none text-neutral-900 md:text-5xl lg:text-6xl dark:text-white">
+					Test your hypothesis faster and turn your MVP into a sticky product
 				</h1>
 				<p class="mb-8 text-lg font-normal text-neutral-500 lg:text-xl sm:px-16 xl:px-48 dark:text-neutral-400">
-					Make your product easy-to-use from a first day with our service. 
-					We do a full cycle UI/UX design within two weeks: from a deep user research and prototyping, <span class="whitespace-nowrap">to testing and implementing.</span>
+					Instead of months of RnD, we deliver you a coded design, test it with your customers and make changes in real-time. It allows you to predict and avoid failure before you’ve burnt all your or your investors’ money.
 				</p>
 				<Button link="#">Start a partnership</Button>
 			</div>
+		</section>
+		<section>
+			<p class="text-4xl font-fieldgothic mb-6 text-center">Build → Test → Learn</p>
+		</section>
+		<section id="value">
+			<CTA>
+				<h2 class="mb-4 text-4xl tracking-tight font-fieldgothic text-gray-900 dark:text-white">
+					Lean UX Approach
+				</h2>
+				<p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+					We adjusted the research and design process for startups’ needs. We dive deep into users’ worlds and work with the actual product. As a result, within two weeks you’ll get an actual user journey and build, test & update the real working product.
+				</p>
+			</CTA>
+			<CTA>
+				<h2 class="mb-4 text-4xl tracking-tight font-fieldgothic text-gray-900 dark:text-white">
+					Pay for Sprint
+				</h2>
+				<p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+					Our pricing is based on sprints. To help you test one hypothesis, we need 2 weeks. You can pay us for that sprint and then continue our partnership when you need to go further.
+				</p>
+			</CTA>
+			<CTA>
+				<h2 class="mb-4 text-4xl tracking-tight font-fieldgothic text-gray-900 dark:text-white">
+					80% result for <span class="whitespace-nowrap">20% effort</span>
+				</h2>
+				<p class="mb-6 font-light text-gray-500 md:text-lg dark:text-gray-400">
+					3 days in deep contact with users — get User Journey and environment.<br>
+					2 days for rapid building, testing & updating the actual product. Not a prototype.
+				</p>
+			</CTA>
+		</section>
+		<section id="pricing">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
+				<div class="mx-auto max-w-screen-md text-center mb-8 lg:mb-12">
+					<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">
+						Pricing TODO: Write an action
+					</h2>
+					<p class="mb-5 font-light text-gray-500 sm:text-xl dark:text-gray-400">
+						/pricing description.
+					</p>
+				</div>
+				<div class="space-y-8 lg:grid lg:grid-cols-3 sm:gap-6 xl:gap-10 lg:space-y-0">
+					<PricingCard></PricingCard>
+				</div>
+			</div>
+		</section>
+		<section id="faq">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+				<h2 class="mb-8 text-4xl tracking-tight font-fieldgothic">Frequently Asked Questions</h2>
+				<div class="grid pt-8 text-left border-t border-gray-200 md:gap-16 dark:border-neutral-700 md:grid-cols-2">
+					<FaqCard>
+						<span slot="question">
+							Am I wrong?
+						</span>
+						<span slot="answer">
+							No. You are not
+						</span>
+					</FaqCard>
+				</div>
+			</div>
+		</section>
+		<section id="Chat">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+				<div class="mx-auto max-w-screen-sm text-center">
+					<h2 class="mb-4 text-4xl tracking-tight font-fieldgothic leading-tight text-gray-900 dark:text-white">
+						Have More Questions?
+					</h2>
+					<p class="mb-6 font-light text-gray-500 dark:text-gray-400 md:text-lg">
+						Get all your questions answered
+					</p>
+					<Button>Let's Chat!</Button>
+					<!-- TODO: Remove Button, Add Form -->
+				</div>
+			</div>
+		</section>
+		<section id="footer">
 		</section>
 		<!--
 		<div class="fixed bottom-5">Menu</div>
@@ -58,13 +136,7 @@ import Avatar from "../components/Avatar.astro";
 					Our design is based on the Tailwind and Flowbite design systems.
 				</p>
 			</div>
-		<h2 class="text-2xl">Approach</h2>
-			<p>- Research is core to understanding users' needs<br>
-				- Research is a time-consuming, non-scalable, expensive thing<br>
-					Only 36% of product teams conduct research studies after the launch<br>
-					78% of product professionals believe their company doesn't do enough research studies or could do more studies<br>
-				- We solve this problem by achieving 80% value with 20% of efforts<br>
-				- We do not make surveys, competitive analysis or usability testing. It's time-consuming and not effective.</p>
+		
 		<h2 class="text-2xl">Our Clients</h2>
 			<p>Practicum</p>
 			<p>RZLT Group</p>
@@ -86,10 +158,6 @@ import Avatar from "../components/Avatar.astro";
 		<h2>Contacts</h2>
 		 -->
 	</main>
-
-	<footer>
-		<div>footer</div>
-	</footer>
 </Layout>
 
 <style is:global>
