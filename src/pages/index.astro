@@ -35,34 +35,30 @@ import TwoColumns from "../layouts/TwoColumns.astro";
 			</div>
 		</section>
 		<section>
-			<p class="text-4xl font-extrabold mb-6 text-center">Build → Test → Learn</p>
+			<p class="text-4xl font-extrabold mb-6 text-center">Build → Test → Learn → Repeat</p>
 		</section>
-		<section id="benefits">
-			<CTA>
-				<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 dark:text-white">
-					Lean UX Approach
-				</h2>
-				<p class="mb-6 font-light text-neutral-500 md:text-lg dark:text-neutral-400">
-					We adjusted the research and design process for startups’ needs. We dive deep into users’ worlds and work with the actual product. As a result, within two weeks you’ll get an actual user journey and build, test & update the real working product.
+		<section>
+			<TwoColumns>
+				<div class="block top-8" slot="description">
+					<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 sm:text-4xl dark:text-white">
+						Benefit
+					</h2>
+					<div class="text-left w-full mx-auto sm:mb-8 pr-6 lg:max-w-2xl font-light text-neutral-500 md:mb-12 sm:text-xl dark:text-neutral-400">
+						Descriprion
+					</div>
+				</div>
+				<div class=" first-letter:flex-col sm:mx-5 divide-y divide-neutral-200 dark:divide-neutral-700" slot="content">
+					<img class="w-full dark:hidden" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup.svg" alt="dashboard image">
+        			<img class="w-full hidden dark:block" src="https://flowbite.s3.amazonaws.com/blocks/marketing-ui/cta/cta-dashboard-mockup-dark.svg" alt="dashboard image">
+				</div>
+			</TwoColumns>
+		</section>
+		<section id="forget">
+			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+				<p class="mb-4 text-6xl max-w-screen-md tracking-tight font-extrabold text-neutral-900 sm:text-6xl dark:text-white">
+					Forget about Time and Money Limitations.
 				</p>
-			</CTA>
-			<CTA>
-				<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 dark:text-white">
-					Pay for Sprint
-				</h2>
-				<p class="mb-6 font-light text-neutral-500 md:text-lg dark:text-neutral-400">
-					Our pricing is based on sprints. To help you test one hypothesis, we need 2 weeks. You can pay us for that sprint and then continue our partnership when you need to go further.
-				</p>
-			</CTA>
-			<CTA>
-				<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 dark:text-white">
-					80% result for <span class="whitespace-nowrap">20% effort</span>
-				</h2>
-				<p class="mb-6 font-light text-neutral-500 md:text-lg dark:text-neutral-400">
-					3 days in deep contact with users — get User Journey and environment.<br>
-					2 days for rapid building, testing & updating the actual product. Not a prototype.
-				</p>
-			</CTA>
+			</div>
 		</section>
 		<section id="social-proof">
 			<TwoColumns>
@@ -300,20 +296,20 @@ import TwoColumns from "../layouts/TwoColumns.astro";
 				</div>
 			</div>
 		</section>
-		<section id="pricing">
-			<div class="py-8 px-4 mx-auto max-w-screen-xl lg:py-16 lg:px-6">
-				<div class="mx-auto max-w-screen-md text-left md:text-center mb-8 lg:mb-12">
-					<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 dark:text-white">
-						Pricing
-					</h2>
-					<p class="mb-5 font-light text-neutral-500 sm:text-xl dark:text-neutral-400">
-						/pricing description.
-					</p>
-				</div>
-				<div class="space-y-8 xl:grid xl:grid-cols-3 sm:gap-6 xl:gap-10 xl:space-y-0">
-					<PricingCard></PricingCard>
-					<PricingCard></PricingCard>
-					<PricingCard></PricingCard>
+		<section>
+			<div class="py-8 px-4 mx-auto max-w-screen-xl sm:py-16 lg:px-6">
+				<div class="gap-6 mb-6 lg:grid lg:mb-16 lg:grid-cols-3">
+					<div class="block md:block top-8" slot="description">
+						<h2 class="mb-4 text-4xl tracking-tight font-extrabold text-neutral-900 sm:text-4xl dark:text-white">
+							Choose the right plan for your business
+						</h2>
+						<div class="text-left w-full xl:mx-auto sm:mb-8 pr-6 lg:max-w-2xl font-light text-neutral-500 md:mb-12 sm:text-xl dark:text-neutral-400">
+							Description
+						</div>
+					</div>
+					<div slot="content" class="sm:flex-row col-span-2 gap-4 bg-black">
+						Comparsion Table
+					</div>
 				</div>
 			</div>
 		</section>
