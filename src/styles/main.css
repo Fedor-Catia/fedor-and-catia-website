@@ -8,6 +8,6 @@
     font-style: normal;
     font-weight: normal;
     font-display: block; /* This property will help us not flash unstyled text for a couple hundred milliseconds, and then it would act like font-display: swap */
-    src: url('/fonts/FieldGothic-No85BoldXWide.otf') format('opentype');
+    src: url('/fonts/FieldGothic-No64Demi.otf') format('opentype');
   }
 }
